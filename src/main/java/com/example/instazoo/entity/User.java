@@ -17,7 +17,7 @@ import java.util.*;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     @Column(nullable = false)
     private String name;
     @Column(unique = true, updatable = false)
